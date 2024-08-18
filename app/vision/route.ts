@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
   }
 
   // log for anti spam
-  fetch("https://analytics.beyondsight.live/api/analyse", {
+  fetch("https://visionary-path.vercel.app/api/analyse", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -36,25 +36,23 @@ export default function Save() {
           WebkitBackgroundClip: "text",
         }}
       >
-        Your Eyes
+        Your Eyes 
       </h1>
       <p className="text-gray-400 text-xl mt-4 text-center max-w-xl">
-        Real-time audio descriptions for the visually impaired, fostering
-        independence and safety.
+      Empowering the visually impaired with instant audio cues, enhancing autonomy and well-being.
       </p>
 
       <div className="flex flex-col items-center justify-center mt-6">
         <div className="text-gray-300 text-sm text-center p-4 bg-gray-800 rounded-lg max-w-lg shadow-md">
-          We recommend saving this app to your home screen for the best
-          experience. Saved apps will launch Your Eyes automatically.
-          Alternatively, you can use the app in your browser by clicking the
-          button below.
+        For optimal performance, we suggest adding this app to your home screen. 
+        Once saved, Your Eyes will start automatically upon launch. If you prefer, 
+        you can also access the app directly in your browser by selecting the button below.
         </div>
         <a
           href="/app"
           className="bg-gradient-to-r from-gray-700 to-gray-500 text-white px-4 py-2 rounded-full mt-6 font-mono shadow-lg hover:from-gray-600 hover:to-gray-400 transition-all duration-300 ease-in-out"
         >
-          Start seeing
+          Start seeing 
         </a>
       </div>
     </motion.div>

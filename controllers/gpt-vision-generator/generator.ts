@@ -1,6 +1,7 @@
 import { differenceInSeconds } from "date-fns";
 import { History } from "../audio-engine/history";
 
+// GPT-3 Vision API
 export class GPTVisionGenerator {
   history: History<string> = new History(5);
   generating: boolean = false;
@@ -11,7 +12,6 @@ export class GPTVisionGenerator {
   async setCadence(cadence: number) {
     this.cadence = cadence;
   }
-
   async generate(force: boolean) {
     console.log("FORCE", force);
     if (this.generating) {
