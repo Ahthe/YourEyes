@@ -47,6 +47,9 @@ dependencies:
   phosphor-react:
     specifier: ^1.4.1
     version: 1.4.1(react@18.2.0)
+  project-yolo:
+    specifier: 'file:'
+    version: file:(@babel/core@7.24.4)(@capacitor/core@5.7.4)
   ramda:
     specifier: ^0.29.1
     version: 0.29.1
@@ -5791,3 +5794,39 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
     dev: true
+
+  file:(@babel/core@7.24.4)(@capacitor/core@5.7.4):
+    resolution: {directory: '', type: directory}
+    id: 'file:'
+    name: project-yolo
+    engines: {node: '20', pnpm: '8'}
+    dependencies:
+      '@capacitor/motion': 5.0.7(@capacitor/core@5.7.4)
+      '@clerk/nextjs': 4.29.11(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)
+      '@datastructures-js/priority-queue': 6.3.1
+      '@deepgram/sdk': 3.2.0
+      '@vercel/analytics': 1.2.2(next@14.1.4)(react@18.2.0)
+      date-fns: 3.6.0
+      framer-motion: 11.0.25(react-dom@18.2.0)(react@18.2.0)
+      howler: 2.2.4
+      ndarray: 1.0.19
+      ndarray-ops: 1.2.2
+      next: 14.1.4(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0)
+      onnxruntime-web: 1.17.1
+      openai: 4.32.2
+      phosphor-react: 1.4.1(react@18.2.0)
+      ramda: 0.29.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-swipeable: 7.0.1(react@18.2.0)
+      react-webcam: 7.2.0(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@capacitor/core'
+      - '@emotion/is-prop-valid'
+      - '@opentelemetry/api'
+      - babel-plugin-macros
+      - encoding
+      - sass
+      - supports-color
+    dev: false
