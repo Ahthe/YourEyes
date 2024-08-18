@@ -233,4 +233,5 @@ export const plurals: {
   laptop: "laptops",
 };
 
-export const highConfidenceClasses = ["person", "chair", "diningtable"];
+// export const highConfidenceClasses = ["person", "chair", "diningtable"];
+export const highConfidenceClasses = yoloClasses;

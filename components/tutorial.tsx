@@ -3,7 +3,7 @@ export function Tutorial({ onClose }: { onClose: () => void }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-black p-8 rounded-lg w-96">
         <div className="flex flex-col items-center justify-center h-full">
-          <h1 className="text-xl font-bold">Welcome to BeyondSight</h1>
+          <h1 className="text-xl font-bold">Welcome to B</h1>
           <p className="text-sm text-gray-500 mt-4">
             Welcome to the VisionaryPath. This is a tutorial to help you get
             started with the app.
