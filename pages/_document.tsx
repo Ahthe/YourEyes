@@ -11,10 +11,10 @@ export default function Document() {
         />
         <link rel="manifest" href="manifest.json" />
         <meta name="theme-color" content="#000000" />
-        <meta name="apple-mobile-web-app-title" content="visionarypath" />
-        <meta name="application-name" content="visionarypath" />
-        <meta name="title" content="visionarypath" />
-        <title key="title">visionarypath</title>
+        <meta name="apple-mobile-web-app-title" content="YourEyez" />
+        <meta name="application-name" content="YourEyez" />
+        <meta name="title" content="YourEyez" />
+        <title key="title">YourEyez</title>
         <meta
           name="description"
           content="An AI-powered lens into the world for the visually impaired."

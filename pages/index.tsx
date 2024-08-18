@@ -26,7 +26,7 @@ export default function Save() {
         src="/icon512_maskable.png"
         className="h-32 w-32 rounded-lg border-white border-4"
       />
-      <h1 className="text-white text-4xl mt-4">visionarypath</h1>
+      <h1 className="text-white text-4xl mt-4">Your Eyez</h1>
       <p className="text-white text-lg mt-4 text-center">
         Real-time audio descriptions for the visually impaired, fostering
         independence and safety.
@@ -35,7 +35,7 @@ export default function Save() {
       <div className="flex flex-col items-center justify-center">
         <div className="mt-4 text-sm text-center p-4">
           We recommend saving this app to your home screen for the best
-          experience. Saved apps will launch visionarypath automatically.
+          experience. Saved apps will launch YourEyez automatically.
           Alternatively, you can use the app in your browser by clicking the
           button below.
         </div>
@@ -68,8 +68,8 @@ export default function Save() {
 //       <header className={`fixed w-full transition-all duration-300 ${isScrolled ? "bg-gray-900 shadow-lg" : ""}`}>
 //         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
 //           <div className="flex items-center">
-//             <img src="/icon512_maskable.png" alt="VisionaryPath Logo" className="h-10 w-10 rounded-lg" />
-//             <h1 className="ml-3 text-2xl font-bold">VisionaryPath</h1>
+//             <img src="/icon512_maskable.png" alt="YourEyez Logo" className="h-10 w-10 rounded-lg" />
+//             <h1 className="ml-3 text-2xl font-bold">YourEyez</h1>
 //           </div>
 //           <nav className="hidden md:block">
 //             <ul className="flex space-x-6">
@@ -143,7 +143,7 @@ export default function Save() {
 
 //         <section id="get-started" className="container mx-auto px-4 py-20 text-center">
 //           <h3 className="text-3xl font-bold mb-6">Ready to Experience the World Anew?</h3>
-//           <p className="text-xl mb-8">Join VisionaryPath and transform the way you perceive your surroundings.</p>
+//           <p className="text-xl mb-8">Join YourEyez and transform the way you perceive your surroundings.</p>
 //           <a
 //             href="/app"
 //             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors"
@@ -155,7 +155,7 @@ export default function Save() {
 
 //       <footer className="bg-gray-900 py-8">
 //         <div className="container mx-auto px-4 text-center">
-//           <p>&copy; 2023 VisionaryPath. All rights reserved.</p>
+//           <p>&copy; 2023 YourEyez. All rights reserved.</p>
 //         </div>
 //       </footer>
 //     </div>
