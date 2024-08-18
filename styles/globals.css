@@ -8,7 +8,6 @@
   --background-end-rgb: 0, 0, 0;
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -22,5 +21,60 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Custom glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffecb3, 0 0 20px #ffecb3, 0 0 30px #ffecb3;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+  }
+}
+
+/* Additional custom utilities */
+@layer utilities {
+  .glow-text {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .metallic-text {
+    background-image: linear-gradient(45deg, #fff, #ffecb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 10px #ffecb3, 0 0 20px #ffecb3;
+  }
+
+  /* Button Styles */
+  .gradient-button {
+    background: linear-gradient(to right, #444, #666);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  .gradient-button:hover {
+    background: linear-gradient(to right, #666, #888);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 10px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .gradient-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-glow {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
   }
 }
