@@ -1,0 +1,53 @@
+{
+  "name": "project-yolo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@capacitor/motion": "^5.0.7",
+    "@clerk/nextjs": "^4.29.11",
+    "@datastructures-js/priority-queue": "^6.3.1",
+    "@deepgram/sdk": "^3.2.0",
+    "@vercel/analytics": "^1.2.2",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.0.25",
+    "howler": "^2.2.4",
+    "ndarray": "^1.0.19",
+    "ndarray-ops": "^1.2.2",
+    "next": "14.1.4",
+    "onnxruntime-web": "^1.17.1",
+    "openai": "^4.32.2",
+    "phosphor-react": "^1.4.1",
+    "project-yolo": "file:",
+    "ramda": "^0.29.1",
+    "react": "^18.2.0",
+    "react-dom": "^18",
+    "react-swipeable": "^7.0.1",
+    "react-webcam": "^7.2.0"
+  },
+  "devDependencies": {
+    "@ducanh2912/next-pwa": "^10.2.5",
+    "@types/howler": "^2.2.11",
+    "@types/ndarray": "^1.0.14",
+    "@types/ndarray-ops": "^1.2.7",
+    "@types/node": "^20",
+    "@types/ramda": "^0.29.12",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": "20",
+    "pnpm": "8"
+  }
+}
