@@ -2,6 +2,12 @@
 
 [Click to watch Demo](https://youtu.be/1F4wq1y6iRo?feature=shared)
 
+[!Complicated](img/complicated.jpg)
+
+[!vending](img/vending_machine.jpg)
+
+[!Stairs](img/scan_ppl.jpg)
+
 Welcome to **Your Eyez**, an innovative app designed to help visually impaired individuals navigate their world with confidence. By harnessing the power of advanced AI technologies, Your Eyez provides real-time audio feedback, painting a vivid picture of the surroundings.
 
 ## Core Technologies
