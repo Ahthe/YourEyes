@@ -19,6 +19,40 @@ export class DecisionEngine {
     this.audio.start();
   }
 
+  // objectInference(seconds: number, useHistory = true) {
+  //   const report = this.yolo.report(
+  //     subSeconds(new Date(), seconds),
+  //     new Date()
+  //   );
+  //   for (const object of report.objects) {
+  //     const key = `${object.label}`;
+  //     if (useHistory && this.history.get(key)) {
+  //       continue;
+  //     }
+
+  //     // let text: string = "";
+
+  //     // if (object.amount > 1) {
+  //     //   text = `many ${plurals[object.label]}`;
+  //     // } else if (object.size === "small" || object.size === "medium") {
+  //     //   text = `${readableClass[object.label]} ${
+  //     //     object.location === "center" ? "front" : object.location
+  //     //   }`;
+  //     // } else {
+  //     //   text = `${readableClass[object.label]}`;
+  //     // }
+  //     this.audio.playText({
+  //       priority: 2,
+  //       text: text,
+  //       key: key,
+  //       voice: "b",
+  //       volume: PlayerVolume.low,
+  //       expiry: addSeconds(new Date(), 3),
+  //     });
+  //     this.history.add(key, object, delays[object.label] ?? 5000);
+  //   }
+  // }
+
   objectInference(seconds: number, useHistory = true) {
     const report = this.yolo.report(
       subSeconds(new Date(), seconds),
@@ -29,19 +63,23 @@ export class DecisionEngine {
       if (useHistory && this.history.get(key)) {
         continue;
       }
-
+  
       let text: string = "";
-
+  
       if (object.amount > 1) {
-        text = `many ${plurals[object.label]}`;
-      } else if (object.size === "small" || object.size === "medium") {
-        text = `${readableClass[object.label]} ${
-          object.location === "center" ? "front" : object.location
+        text = `There are many ${plurals[object.label]} ${
+          object.location === "center" ? "in front of you" : `on the ${object.location}`
         }`;
       } else {
-        text = `${readableClass[object.label]}`;
+        text = `There is a ${readableClass[object.label]} ${
+          object.location === "center" ? "in front of you" : `on the ${object.location}`
+        }`;
       }
-
+  
+      if (object.size === "large") {
+        text = `${text}. It appears to be large`;
+      }
+  
       this.audio.playText({
         priority: 2,
         text: text,
