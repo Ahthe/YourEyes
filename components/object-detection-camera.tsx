@@ -33,38 +33,9 @@ const WebcamComponent = (props: {
   const [facingMode, setFacingMode] = useState<string>("environment");
   const originalSize = useRef<number[]>([0, 0]);
   const user = useUser();
-  const [resolution, setResolution] = useState({ width: 640, height: 480 });
-  const lastFrameTime = useRef(0);
-  const targetFPS = 30;
 
   useEffect(() => {
     localStorage.getItem("tutorial") === "false" && setTutorial(false);
-        const setupCamera = async () => {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      const track = stream.getVideoTracks()[0];
-      const capabilities = track.getCapabilities();
-      
-      if (capabilities.width && capabilities.height) {
-        // Start with lowest resolution and increase gradually
-        const resolutions = [
-          { width: 640, height: 480 },
-          { width: 1280, height: 720 },
-          { width: 1920, height: 1080 }
-        ];
-        
-        for (const res of resolutions) {
-          try {
-            await track.applyConstraints({ width: res.width, height: res.height });
-            setResolution(res);
-            break;
-          } catch (error) {
-            console.log(`Failed to set resolution ${res.width}x${res.height}`);
-          }
-        }
-      }
-    };
-
-    setupCamera();
   }, []);
 
   const capture = () => {
