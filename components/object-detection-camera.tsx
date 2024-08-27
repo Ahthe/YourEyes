@@ -131,10 +131,11 @@ const WebcamComponent = (props: {
     const handleVisibilityChange = () => {
       if (document.hidden) {
         liveDetection.current = false;
-        sessionStorage.removeItem("image");
-        window.location.reload();
+      } else {
+        if (start) {
+          runLiveDetection();
+        }
       }
-      // set SSR to true to prevent webcam from loading when tab is not active
       setSSR(document.hidden);
     };
     setSSR(document.hidden);
