@@ -308,8 +308,8 @@ const WebcamComponent = (props: {
                 text: [
                   ...[
                     name
-                      ? `Welcome to YourEyez, ${name}.`
-                      : "Welcome to YourEyez.",
+                      ? `Welcome to YourEyes, ${name}.`
+                      : "Welcome to YourEyes.",
                   ],
                 ].join(" "),
                 volume: 1,
