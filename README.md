@@ -1,6 +1,6 @@
 # Your Eyes: An AI-powered vision aid
 
-[Click to watch Demo](https://youtu.be/1F4wq1y6iRo&t=120s)
+[Click to watch Demo](https://youtu.be/1F4wq1y6iRo&t=80s)
 
 ## Pictures
 ![Complicated](img/complicated.jpg)
