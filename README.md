@@ -3,6 +3,7 @@
 [Click to watch Demo](https://youtu.be/1F4wq1y6iRo&t=80s)
 
 ## Pictures
+
 ![Complicated](img/complicated.jpg)
 
 ![vending](img/vending_machine.jpg)
@@ -11,27 +12,26 @@
 
 ## Overview
 
-**Your Eyes** is an AI-powered application designed to enhance the independence and mobility of visually impaired individuals. By utilizing state-of-the-art AI technologies, it provides real-time audio feedback to describe the user's surroundings, enabling a richer interaction with the world.
+Welcome to **Your Eyes**, an innovative app designed to help visually impaired individuals navigate their world with confidence. By harnessing the power of advanced AI technologies, Your Eyes provides real-time audio feedback, painting a vivid picture of the surroundings.
 
-## Key Accomplishments
+## 🏆 What we accomplished?
 
-- Achieved real-time object detection with ~100ms latency using optimized YOLOv7 models.
-- Developed a robust solution focusing on performance, accuracy, and accessibility.
+We achieved real-time object detection with a latency of just ~100ms by optimizing YOLOv7 models. Our team built this solution with a focus on performance, accuracy, and accessibility.
 
-## Architecture and Framework
+## 👷‍♂️ Architecture and Framework
 
-- **Next.js**: For server-side rendering and static site generation, ensuring fast and efficient web app performance.
-- **TypeScript**: Provides strong typing, enhancing code reliability and maintainability.
-- **TailwindCSS**: Offers utility-first styling for a responsive and accessible user interface.
-- **Clerk**: Manages user authentication seamlessly, ensuring secure access to the application.
+1. Next.js for server-side rendering and static site generation.
+2. TypeScript for strong typing.
+3. TailwindCSS for utility-first styling.
+4. Clerk for authentication.
 
-## AI Technologies
+## 🤖 AI Technologies
 
 - **YOLOv7**: Powers real-time object detection, running over 10 inferences per second on-device. This ensures immediate identification and tracking of objects, providing crucial information about obstacles and points of interest.
 - **GPT-4 Vision**: Delivers insightful and contextual scene descriptions, capturing details beyond simple object recognition to enhance user understanding of their environment.
 - **ONNX Runtime**: Utilized for efficient model deployment on WebAssembly, enabling high-performance inference directly in the browser without server dependency.
 
-## Audio Processing
+## 🔉 Audio Processing and Text-to-Speech (TTS):
 
 - Custom `AudioGenerator` class for managing audio playback priorities, ensuring important information is communicated effectively.
 - Utilizes a `PriorityQueue` for efficient audio scheduling, allowing for real-time adjustments based on user needs.
