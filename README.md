@@ -13,6 +13,29 @@
 
 Welcome to **Your Eyes**, an innovative app designed to help visually impaired individuals navigate their world with confidence. By harnessing the power of advanced AI technologies, Your Eyes provides real-time audio feedback, painting a vivid picture of the surroundings.
 
+## 🏆 What we accomplished?
+
+We achieved real-time object detection with a latency of just ~100ms by optimizing YOLOv7 models. Our team built this solution with a focus on performance, accuracy, and accessibility.
+
+## 👷‍♂️ Architecture and Framework
+
+1. Next.js for server-side rendering and static site generation.
+2. TypeScript for strong typing.
+3. TailwindCSS for utility-first styling.
+4. Clerk for authentication.
+
+## 🤖 AI Technologies
+
+1. YOLOv7 for real-time object detection.
+2. GPT-4 Vision for advanced scene understanding.
+3. ONNX (Open Neural Network Exchange) format for machine learning model deployment.
+
+## 🔉 Audio Processing and Text-to-Speech (TTS):
+
+1. Custom AudioGenerator class for managing audio playback priorities.
+2. PriorityQueue for efficient audio scheduling.
+3. Dual-voice system ("a" and "b") for varied audio feedback.
+
 ## Core Technologies
 
 - **Object detection with YOLOv7**: Identifies and tracks objects in real-time, offering crucial information about obstacles and points of interest.
